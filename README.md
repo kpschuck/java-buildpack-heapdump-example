@@ -30,7 +30,7 @@ Next, trigger an OOM conditon by POSTing to the `/oom` endpoint:
 curl -X POST https://jbp-oom-example.yourdomain.com/oom
 ```
 
-You should see the following in the logs indication a heapdump was captured:
+You should see the following in the logs indicating a heapdump was captured:
 ```
 2020-06-16T14:16:21.11-0500 [APP/PROC/WEB/0] OUT Heapdump written to "/var/heap-dump/playground-9d67e169/jbp-oom-example-7728eab2/0-2020-06-16T19:16:20-0000-ecf6826b.hprof"
 ...
