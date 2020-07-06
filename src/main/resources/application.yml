@@ -1,0 +1,8 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,heapdump
+  endpoint:
+    heapdump:
+      enabled: true

@@ -1,0 +1,6 @@
+---
+applications:
+- name: jbp-oom-example
+  memory: 1300m
+  services:
+    - heap-dump
