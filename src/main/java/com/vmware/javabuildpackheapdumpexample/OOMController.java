@@ -11,6 +11,6 @@ public class OOMController {
     OOM newOOM() throws InterruptedException {
         OOM oom = new OOM();
         oom.trigger();
-        return new OOM();
+        return oom;
     }
 }
