@@ -13,10 +13,10 @@ To begin, ensure your app will be bound to a volume service with the string `hea
 <CONTAINER_DIR>/<SPACE_NAME>-<SPACE_ID[0,8]>/<APPLICATION_NAME>-<APPLICATION_ID[0,8]>/<INSTANCE_INDEX>-<TIMESTAMP>-<INSTANCE_ID[0,8]>.hprof
 ```
 
-Service binding example:
+Service binding example (this is also taken care of in `manifest.yml`):
 
 ```
-cf bind-service jbp-oom-example heap-dump -c '{"uid":"12345","gid":"12345","mount":"/var/heap-dump"}'
+cf bind-service jbp-oom-example heap-dump -c '{"mount":"/var/heap-dump"}'
 ```
 
 You should see the following logged on startup:
