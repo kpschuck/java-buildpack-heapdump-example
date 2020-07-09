@@ -1,6 +1,10 @@
 ---
 applications:
 - name: jbp-oom-example
+  buildpacks:
+  - java_buildpack_offline
   memory: 1300m
   services:
-    - heap-dump
+    - name: heap-dump
+      parameters:
+        mount: /var/heap-dump
